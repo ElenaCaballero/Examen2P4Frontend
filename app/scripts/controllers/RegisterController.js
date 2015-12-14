@@ -6,7 +6,7 @@ angular.module('AngularScaffold.Controllers')
         alert('Registered in correctly!');
       }).catch(function(err){
         console.log(err);
-        alert(err.data.error + " " + err.data.message);
+        //alert(err.data.error + " " + err.data.message);
       })
     }
   }]);
