@@ -1,0 +1,27 @@
+.logo-front {
+  padding: 2em;
+  max-height: 9em;
+}
+
+.login-options {
+  float: right;
+  padding-top: 1em;
+}
+#nav_button{
+  font-family: Helvetica;
+  font-size: 15px;
+  color: white;
+  text-transform: none;
+  padding: 0px;
+  margin: 0px;
+  background: transparent;
+  border-color: transparent;
+}
+
+#span_navbar{
+  padding: 5px;
+  margin: 0px;
+  font-size: 15px;
+  font-family: Helvetica;
+  color: white;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>STROOM CLIENT PORTAL ULTRA_BETA</title>
+    <link rel="stylesheet" href="styles/ripples.css">
+    <link rel="stylesheet" href="styles/roboto.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/bootstrap-css/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/material-fullpalette.css">
+
+
+  </head>
+  <body id='body' ng-app="AngularScaffold">
+    <div ng-controller="NavbarController">
+
+      <nav id="navbar" class="navbar navbar-default">
+        <!-- div LOGO -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="myNavbar" >
+          <!-- Items a la derecha -->
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-show="$sessionStorage.currentUser"><a href=""> <span id="span_navbar" class=""> {{$sessionStorage.currentUser.username}}</span></a></li>
+            <li ng-show="isAdmin()"> <a href=""> <button id="nav_button" ng-click="registernew()">Register</button> </a> </li>
+            <li><a href=""><button id="nav_button"type="submit" class="" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div ui-view ></div>
+    </div>
+  </body>
+
+  <!-- bower:js -->
+
+  <script src="/jquery/dist/jquery.js"></script>
+
+  <script src="/angular/angular.js"></script>
+
+  <script src="/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <script src="/bootstrap-css/js/bootstrap.min.js"></script>
+
+  <script src="/ngstorage/ngStorage.js"></script>
+
+  <script src="/Chart.js/Chart.js"></script>
+
+  <script src="/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- endinject -->
+
+  <script src="app.js"></script>
+  <script src="/scripts/extras/Chart.js"></script>
+  <script src="/scripts/extras/material.js"></script>
+
+  <!-- inject:js -->
+  <script src="scripts/controllers/HomeController.js"></script>
+  <script src="scripts/controllers/navbarController.js"></script>
+  <script src="scripts/controllers/RegisterController.js"></script>
+  <script src="scripts/controllers/UserController.js"></script>
+  <script src="scripts/services/authService.js"></script>
+  <script src="scripts/services/HomeService.js"></script>
+  <script src="scripts/services/RegisterService.js"></script>
+  <script src="scripts/services/UserService.js"></script>
+  <script src="scripts/extras/Chart.js"></script>
+  <script src="scripts/extras/material.js"></script>
+  <!-- endinject -->
+</html>
