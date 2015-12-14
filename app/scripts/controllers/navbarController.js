@@ -13,14 +13,6 @@ angular.module('AngularScaffold.Controllers')
         })
       }
 
-      $scope.registernew = function(){
-        if($sessionStorage.currentUser.scope=='admin'){
-          $location.path('/register');
-        }else{
-          $location.path('/regular');
-        }
-        
-      }
 
       $scope.isAdmin = function(){
         return $sessionStorage.currentUser && $sessionStorage.currentUser.scope.indexOf('admin') > -1;

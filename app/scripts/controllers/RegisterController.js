@@ -1,7 +1,7 @@
 angular.module('AngularScaffold.Controllers')
   .controller('RegisterController', ['$scope', 'RegisterService', '$sessionStorage', function ($scope, RegisterService, $sessionStorage) {
     $scope.register = function(){
-      var user = {username: $scope.user.username, password:  $scope.user.password, customer: $scope.user.customer, scope: $scope.user.scope};
+      var user = {username: $scope.user.username, password:  $scope.user.password};
       RegisterService.Register(user).then(function(response){
         alert('Registered in correctly!');
       }).catch(function(err){

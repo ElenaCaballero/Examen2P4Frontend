@@ -11,17 +11,12 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: '/views/home.html',
             controller: 'HomeController'
         })
-				.state('admin', {
-            url: '/admin',
-            templateUrl: '/views/admin.html',
-            controller: 'UserController'
+		.state('gift', {
+            url: '/gift',
+            templateUrl: '/views/giftregister.html',
+            controller: 'GiftController'
         })
-				.state('regular', {
-            url: '/regular',
-            templateUrl: '/views/regular.html',
-            controller: 'UserController'
-        })
-				.state('register', {
+		.state('register', {
             url: '/register',
             templateUrl: '/views/register.html',
             controller: 'RegisterController'
