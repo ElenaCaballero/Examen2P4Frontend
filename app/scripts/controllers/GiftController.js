@@ -1,5 +1,5 @@
 angular.module('AngularScaffold.Controllers')
-  .controller('GiftController', ['$scope', 'HomeService', '$sessionStorage', '$location', function ($scope, GiftService, $sessionStorage, $location) {
+  .controller('GiftController', ['$scope', 'GiftService', '$sessionStorage', '$location', function ($scope, GiftService, $sessionStorage, $location) {
     	$scope.title = "Gifts";
 
       $scope.registerGift = function(){
