@@ -28,7 +28,7 @@
           <!-- Items a la derecha -->
           <ul class="nav navbar-nav navbar-right">
             <li ng-show="$sessionStorage.currentUser"><a href=""> <span id="span_navbar" class=""> {{$sessionStorage.currentUser.username}}</span></a></li>
-            <li ng-show="isAdmin()"> <a href=""> <button id="nav_button" ng-click="registernew()">Register</button> </a> </li>
+            <li> <a href=""> <button id="nav_button" ng-click="registernew()">Register</button> </a> </li>
             <li><a href=""><button id="nav_button"type="submit" class="" ng-click="logout()" ng-show="$sessionStorage.currentUser">Log out</button></a></li>
           </ul>
         </div>
