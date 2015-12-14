@@ -17,6 +17,10 @@ angular.module('AngularScaffold.Controllers')
         $location.path('/register');
       }
 
+      $scope.registergifts = function(){
+        $location.path('/registergifts');
+      }
+
       $scope.isAdmin = function(){
         return $sessionStorage.currentUser && $sessionStorage.currentUser.scope.indexOf('admin') > -1;
       }
