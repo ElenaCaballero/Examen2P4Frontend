@@ -6,11 +6,7 @@ angular.module('AngularScaffold.Controllers')
         HomeService.Login(user).then(function(response, location){
           $sessionStorage.currentUser = response.data;
           $scope.user = {};
-          if($sessionStorage.currentUser.scope=='admin'){
-            $location.path('/admin');
-          }else{
-            $location.path('/regular');
-          }
+          $location.path('/registergifts');
         }).catch(function(err){
           alert(err.data.error + " " + err.data.message);
         });

@@ -11,8 +11,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
             templateUrl: '/views/home.html',
             controller: 'HomeController'
         })
-		.state('gift', {
-            url: '/gift',
+        .state('registergifts', {
+            url: '/registergifts',
             templateUrl: '/views/giftregister.html',
             controller: 'GiftController'
         })
